@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+#producoes {
+    background: url('../img/v1016-b-09.jpg');
+    font-family: "Oswald", sans-serif;
+    margin-top: 20px;
+    box-shadow: 10px 10px 5px #0D0D0D;
+    border: double 2px rgba(21, 20, 21, 0.547);
+   
+}
+
+#producoes h1 {
+    text-align: center;
+}
+
+.producoes-pro {
+    background-color: rgba(0, 0, 0, 0.242);
+    opacity: 0.9;
+    border-radius: 5px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+
+
+
+
+
+.producoes-list div.col-md-4 {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.producoes-list iframe {
+    margin-top: 50px;
+    border: 2px dotted rgb(58, 15, 22);
+    box-shadow: 10px 10px 5px black;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.producoes-list iframe:hover {
+
+    position: relative;
+    top: 2px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.769);
+
+}
