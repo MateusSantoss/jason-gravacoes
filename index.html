@@ -27,9 +27,9 @@
         
          <nav class="container-fluid">
             <ul class="navbar">
-                <li class="nav-item"><a class="nav-link text-uppercase" href="#sobre">sobre mim</a></li>
-                <li class="nav-item"><a href="#producoes" class="nav-link text-uppercase">produções</a></li>
-                <li class="nav-item"><a href="#contato" class="nav-link text-uppercase">contato</a></li>
+                <li class="nav-item"><a class="nav-link text-uppercase" href="#sobre" onclick="carregarBarraNavegacao('sobre-nav')">sobre mim</a></li>
+                <li class="nav-item"><a href="#producoes" class="nav-link text-uppercase" onclick="carregarBarraNavegacao('producoes-nav')">produções</a></li>
+                <li class="nav-item"><a href="#contato" class="nav-link text-uppercase" onclick="carregarBarraNavegacao('contato-nav')">contato</a></li>
             </ul>
                 
 
@@ -39,12 +39,10 @@
 
    <section id="sobre" class="container-fluid">
 
-      <nav class="container-fluid ">
-         <ul class="navbar">
-             <li class="nav-item"><a class="nav-link text-uppercase" href="#sobre" onclick="carregarBarraNavegacao('producoes-nav')">sobre mim</a></li>
-             <li class="nav-item"><a href="#producoes" class="nav-link text-uppercase" onclick="carregarBarraNavegacao('producoes-nav') ">produções</a></li>
-             <li class="nav-item"><a href="#contato" class="nav-link text-uppercase" onclick="carregarBarraNavegacao('producoes-nav')">contato</a></li>
-         </ul>
+      <nav class="container-fluid " id="sobre-nav">
+        
+             
+         
              
 
       </nav>
@@ -75,77 +73,27 @@
 
       <h1>Produções</h1>
 
-      <div class="producoes-pro container-fluid">
-         <div class="row producoes-list">
-            <div class="col-md-4 col-12 m-2  m-md-0">
-               <iframe  class="iframe"
-                  src="https://www.youtube.com/embed/93Mhet5wAWg?si=2vJLmU2H7xYFgV-n" 
-                  title="YouTube video player" 
-                  frameborder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen>
-               </iframe>
-            </div>
+      <div class="d-flex justify-content-center">
+         <button onclick="CarregarProducoes()" class="btn text-light btn-outline-dark" id="producoes-button" >Listar produções</button>
 
-            <div class="col-md-4 col-12 m-2 m-md-0">
-               <iframe 
-                 class="iframe"
-                  src="https://www.youtube.com/embed/vWmzjHlb5_g?si=yjONBM5pB7tuPPSY" 
-                  title="YouTube video player" frameborder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                  allowfullscreen>
-              </iframe>
-            </div>
+      </div>
 
-            <div class="col-md-4 col-12 m-2  m-md-0">
-               <iframe 
-                  src="https://www.youtube.com/embed/w4vGmc4v0dI?si=uGelHy857FvlL4Tr" 
-                  title="YouTube video player" 
-                  frameborder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                  allowfullscreen>
-               </iframe>
-               
-            </div>
+      
 
-            <div class="col-md-4 col-12 m-2  m-md-0">
-               <iframe 
-                  src="https://www.youtube.com/embed/-pHVpSgbCIM?si=xyATwfK-WdFVDCCZ" 
-                  title="YouTube video player" 
-                  frameborder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                  allowfullscreen>
-               </iframe>
-            </div>
-
-            <div class="col-md-4 col-12 m-2  m-md-0">
-               <iframe  
-                   src="https://www.youtube.com/embed/L3Z_lsJ3I7k?si=GO_CCCOWGN3q77t7" 
-                   title="YouTube video player" 
-                   frameborder="0" 
-                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                   allowfullscreen>
-               </iframe>
-            </div>
-
-            <div class="col-md-4 col-12 m-2  m-md-0">
-               <iframe 
-                  src="https://www.youtube.com/embed/mzyzLhkLFjQ?si=TOfccEVWKu7BH1_-" 
-                  title="YouTube video player" 
-                  frameborder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                  allowfullscreen>
-               </iframe>
-            </div>
-         </div>
+     <div class="producoes-pro container-fluid"  id="lista-producoes">
+        
 
       </div>
 
    </section>
 
-   
+   <nav id="contato-nav" class=" bg-black p-3 text-white">
+
+   </nav>
 
    <section id="contato" class="container-fluid">
+
+  
       
       <div class="row p-3 contato-container">
          <!--redes sociais-->

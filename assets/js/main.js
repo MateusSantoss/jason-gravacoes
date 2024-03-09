@@ -21,14 +21,123 @@
   });
 
 
+ 
+
+   
+  const CarregarProducoes = () => {
+    
+    document.getElementById('producoes-button').remove()
+    document.getElementById('lista-producoes').innerHTML = `
+    <div class="row producoes-list">
+    <div class="col-md-4 col-12 m-2  m-md-0">
+       <iframe  class="iframe"
+          src="https://www.youtube.com/embed/93Mhet5wAWg?si=2vJLmU2H7xYFgV-n" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+       </iframe>
+    </div>
+
+    <div class="col-md-4 col-12 m-2 m-md-0">
+       <iframe 
+         class="iframe"
+          src="https://www.youtube.com/embed/vWmzjHlb5_g?si=yjONBM5pB7tuPPSY" 
+          title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+      </iframe>
+    </div>
+
+    <div class="col-md-4 col-12 m-2  m-md-0">
+       <iframe 
+          src="https://www.youtube.com/embed/w4vGmc4v0dI?si=uGelHy857FvlL4Tr" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+       </iframe>
+       
+    </div>
+
+    <div class="col-md-4 col-12 m-2  m-md-0">
+       <iframe 
+          src="https://www.youtube.com/embed/-pHVpSgbCIM?si=xyATwfK-WdFVDCCZ" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+       </iframe>
+    </div>
+
+    <div class="col-md-4 col-12 m-2  m-md-0">
+       <iframe  
+           src="https://www.youtube.com/embed/L3Z_lsJ3I7k?si=GO_CCCOWGN3q77t7" 
+           title="YouTube video player" 
+           frameborder="0" 
+           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+           allowfullscreen>
+       </iframe>
+    </div>
+
+    <div class="col-md-4 col-12 m-2  m-md-0">
+       <iframe 
+          src="https://www.youtube.com/embed/mzyzLhkLFjQ?si=TOfccEVWKu7BH1_-" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+       </iframe>
+    </div>
+ </div>
+    `
+  }
+
+  let nav = Array()
   const carregarBarraNavegacao = (id) => {
+    
+    
     const navbar = document.getElementById(id)
     
-    navbar.innerHTML = `
-          <ul class="navbar">
-              <li class="nav-item"><a class="nav-link text-uppercase" href="#sobre">sobre mim</a></li>
-              <li class="nav-item"><a href="#contato" class="nav-link text-uppercase">contato</a></li>
-          </ul> 
+ 
+  
+
+    switch (id) {
+      case "producoes-nav":
+        console.log(id)
+        nav[0]  = ` <li class="nav-item"><a class="nav-link text-uppercase" href="#sobre" onclick="carregarBarraNavegacao('sobre-nav')">sobre mim</a></li>`
+        nav[1] = `<li class="nav-item"><a href="#contato" class="nav-link text-uppercase" onclick="carregarBarraNavegacao('contato-nav')">contato</a></li>`
+        break;
+      case "sobre-nav":
+        nav[0]  = `<li class="nav-item"><a href="#producoes" class="nav-link text-uppercase" onclick="carregarBarraNavegacao('producoes-nav')">produções</a></li>`
+        nav[1] = `<li class="nav-item"><a href="#contato" class="nav-link text-uppercase" onclick="carregarBarraNavegacao('contato-nav')">contato</a></li>`
+        break;
+      case "contato-nav":
+        nav[0] = `<li class="nav-item"><a href="#producoes" class="nav-link text-uppercase" onclick="carregarBarraNavegacao('producoes-nav')">produções</a></li>`
+        nav[1] = `<li class="nav-item"><a class="nav-link text-uppercase" href="#sobre" onclick="carregarBarraNavegacao('sobre-nav')">sobre mim</a></li>`
     
-    `
+      default:
+        break;
+    }
+
+   
+
+  
+          navbar.innerHTML = `
+          <ul class="navbar">
+             ${nav[0]
+            }
+            <br>
+
+            ${ nav[1]}
+          </ul> 
+
+        `
+
+       
+    
+     
+   
+    
+    
   }
