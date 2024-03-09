@@ -17,7 +17,7 @@
     
       <div class="topo_img container-fluid"
       >
-        <img src="assets/img/logo.png" height="100%" width="100%"class="img img-fluid">
+        <img src="assets/img/logo.png" height="100%" width="100%"class="img img-fluid" alt="logo">
         <h5 class="topo_img_titulo">Gravação, mixagem e masterização de áudio</h5> 
 
       </div>
@@ -27,9 +27,9 @@
         
          <nav class="container-fluid">
             <ul class="navbar">
-                <li class="nav-item"><a class="nav-link text-uppercase" href="">sobre mim</a></li>
-                <li class="nav-item"><a href="" class="nav-link text-uppercase">produções</a></li>
-                <li class="nav-item"><a href="" class="nav-link text-uppercase">contato</a></li>
+                <li class="nav-item"><a class="nav-link text-uppercase" href="#sobre">sobre mim</a></li>
+                <li class="nav-item"><a href="#producoes" class="nav-link text-uppercase">produções</a></li>
+                <li class="nav-item"><a href="#contato" class="nav-link text-uppercase">contato</a></li>
             </ul>
                 
 
@@ -39,9 +39,19 @@
 
    <section id="sobre" class="container-fluid">
 
+      <nav class="container-fluid ">
+         <ul class="navbar">
+             <li class="nav-item"><a class="nav-link text-uppercase" href="#sobre" onclick="carregarBarraNavegacao('producoes-nav')">sobre mim</a></li>
+             <li class="nav-item"><a href="#producoes" class="nav-link text-uppercase" onclick="carregarBarraNavegacao('producoes-nav') ">produções</a></li>
+             <li class="nav-item"><a href="#contato" class="nav-link text-uppercase" onclick="carregarBarraNavegacao('producoes-nav')">contato</a></li>
+         </ul>
+             
+
+      </nav>
+
       <div class="row">
          <article id="sobre_img" class="col-md-6">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRObPqifjaY_XhtqkVFqR54lyFL-UL1CDwE9vSJcHWBpg&s" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRObPqifjaY_XhtqkVFqR54lyFL-UL1CDwE9vSJcHWBpg&s" alt="minha-foto">
          </article>
    
          <article id="sobre_conteudo" class="col-md-6">
@@ -59,11 +69,15 @@
    </section>
 
    <section id="producoes">
+      <nav class="container-fluid" id="producoes-nav">
+               
+      </nav>
+
       <h1>Produções</h1>
 
       <div class="producoes-pro container-fluid">
          <div class="row producoes-list">
-            <div class="col-md-4 col-12 ">
+            <div class="col-md-4 col-12 m-2  m-md-0">
                <iframe  class="iframe"
                   src="https://www.youtube.com/embed/93Mhet5wAWg?si=2vJLmU2H7xYFgV-n" 
                   title="YouTube video player" 
@@ -73,7 +87,7 @@
                </iframe>
             </div>
 
-            <div class="col-md-4 col-12">
+            <div class="col-md-4 col-12 m-2 m-md-0">
                <iframe 
                  class="iframe"
                   src="https://www.youtube.com/embed/vWmzjHlb5_g?si=yjONBM5pB7tuPPSY" 
@@ -83,7 +97,7 @@
               </iframe>
             </div>
 
-            <div class="col-md-4 col-12">
+            <div class="col-md-4 col-12 m-2  m-md-0">
                <iframe 
                   src="https://www.youtube.com/embed/w4vGmc4v0dI?si=uGelHy857FvlL4Tr" 
                   title="YouTube video player" 
@@ -94,7 +108,7 @@
                
             </div>
 
-            <div class="col-md-4 col-12">
+            <div class="col-md-4 col-12 m-2  m-md-0">
                <iframe 
                   src="https://www.youtube.com/embed/-pHVpSgbCIM?si=xyATwfK-WdFVDCCZ" 
                   title="YouTube video player" 
@@ -104,7 +118,7 @@
                </iframe>
             </div>
 
-            <div class="col-md-4 col-12">
+            <div class="col-md-4 col-12 m-2  m-md-0">
                <iframe  
                    src="https://www.youtube.com/embed/L3Z_lsJ3I7k?si=GO_CCCOWGN3q77t7" 
                    title="YouTube video player" 
@@ -114,7 +128,7 @@
                </iframe>
             </div>
 
-            <div class="col-md-4 col-12">
+            <div class="col-md-4 col-12 m-2  m-md-0">
                <iframe 
                   src="https://www.youtube.com/embed/mzyzLhkLFjQ?si=TOfccEVWKu7BH1_-" 
                   title="YouTube video player" 
@@ -129,10 +143,69 @@
 
    </section>
 
-   <section id="contato">
-      <h4>Entre em contato</h4>
+   
+
+   <section id="contato" class="container-fluid">
+      
+      <div class="row p-3 contato-container">
+         <!--redes sociais-->
+         <ul class="col-md-4 col-12">
+            <li>
+               <h4>Siga-me nas redes sociais</h4>
+               <a href="https://www.instagram.com/jasonteclas/">
+                  <img src="assets/img/icones/instagram_733558.png" alt="instagram"> 
+                  <span>instagram</span>
+               </a>
+            </li>
+            <li>
+               <a href="https://www.facebook.com/jasonteclasof">
+                  <img src="assets/img/icones/facebook_733547.png" alt="facebook">
+                  <span>Facebook</span>
+               </a>
+            </li>
+   
+            <li>
+               <a href="https://www.youtube.com/@jasonteclas">
+                  <img src="assets/img/icones/youtube.png" alt="youtube">
+                  <span>YouTube</span>
+               </a>
+            </li>
+         </ul>
+         <!--contato-->
+         <ul class="col-md-4 col-12">
+            <li>
+               <h4>entre em contato</h4>
+               <a href="https://api.whatsapp.com/send?phone=557598606930">
+                  <img src="./assets/img/icones/whatsapp_733585.png" alt="whatsapp_733585">
+                  <span>whatsapp</span>
+            
+               </a>
+               
+            </li>
+            <li>
+               <img src="./assets/img/icones/celular.png" alt="telefone">
+               
+                  <span>+55 (75) 98606930</span>
+            
+               </a>
+            </li>
+   
+         </ul>
+
+      </div>
+      
+      
+
+      
+     
    </section>
 
-    
+   <footer class="container">
+      <a href="https://www.flaticon.com/br/icones-gratis/youtube" class="m-2" title="youtube ícones">Youtube ícones criados por Freepik - Flaticon</a>
+      <a href="https://www.flaticon.com/br/icones-gratis/telefone" class="m-2" title="telefone ícones">Telefone ícones criados por Freepik - Flaticon</a>
+   </footer>
+
+   <script src="assets/js/main.js"></script>
+   
 </body>
 </html>
