@@ -1,3 +1,5 @@
+ 
+ //sistema de navegação
  document.addEventListener("DOMContentLoaded", function() {
     const links = document.querySelectorAll("nav ul li a");
   
@@ -23,8 +25,8 @@
 
  
 
-   
-  const CarregarProducoes = () => {
+  //carrega a lista com as produções após o usário clicar em listar produções
+  const CarregarProducoes =  () => {
     
     document.getElementById('producoes-button').remove()
     document.getElementById('lista-producoes').innerHTML = `
@@ -90,7 +92,7 @@
        </iframe>
     </div>
  </div>
-    `
+    ` 
   }
 
   let nav = Array()
@@ -101,7 +103,7 @@
     
  
   
-
+    //lista da barra de navegação é modficada dinamicamente após o usuário escolher uma "rota"
     switch (id) {
       case "producoes-nav":
         console.log(id)
